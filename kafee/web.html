@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<HTML>
+<head>
+    <title>coffe shop website</title>
+    <style>
+        html{
+            scroll-behavior: smooth;
+
+        }
+      
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: rgb(117, 74, 74);
+      }
+
+.hero-section {
+  background-image: url('kafe.jpeg'); /* or full path */
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.7); /* optional for contrast */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.coffee-icon {
+  width: 100px;
+  height: auto;
+  margin: right 1px;
+}
+
+.coffee-heading {
+  font-size: 56px;
+  letter-spacing: 1.5px;
+  background: linear-gradient(90deg, #3c2512, #4b2e2e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: slideIn 1.5s ease-out;
+  
+}
+
+  
+      .navbar {
+        background-color:rgb(69, 43, 43);
+        padding: 10px 20px;
+        display: flex;
+        align-items:center ;
+        justify-content: space-between;
+      }
+  
+      .navbar a {
+        color: white;
+        text-decoration:solid;
+        margin: 0 10px;
+      }
+  
+      .navbar a:hover {
+        text-decoration: underline;
+      }
+  
+      .nav-links {
+        display: flex;
+      }
+
+      @keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h5{
+  font-size:xx-large;
+  font-style:normal;
+  
+
+}
+
+.coffee-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:right;
+  padding: 40px 20px;
+  gap: 200px;
+  background-color: #ad9b88;
+}
+
+.coffee-xx {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:left;
+  padding: 40px 20px;
+  gap: 30px;
+  font-size: 30px;
+  background-color: #ad9b88;
+}
+
+.coffee-card {
+
+  position: relative;
+  width: 200px;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(8, 2, 2, 0.2);
+  cursor: pointer;
+}
+
+.coffee-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.coffee-popup {
+  position: absolute;
+  bottom: 0;
+  background: rgba(60, 37, 18, 0.8);
+  color: rgb(167, 145, 145);
+  width: 100%;
+  text-align: center;
+  padding: 15px;
+  font-size: 20px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+/* Hover effect */
+.coffee-card:hover img {
+  transform: scale(1.1);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.coffee-card:hover .coffee-popup {
+  opacity: 1;
+}
+
+
+    </style>
+</head>
+<body>
+  
+  <div class="hero-section">
+    <div class="heading-container">
+      <img src="kafe2.png" alt="Coffee Cup" class="coffee-icon">
+      <div class="coffee-heading">FFEE BREW</div>
+    </div>
+  </div>
+  
+  
+  
+
+     <div class="navbar" style="margin-top: 2px;">
+      <div class="logo"><a href="#">MySite</a></div>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="web.html">Home</a>
+        <a href="#contact">contact</a>
+        <a href="#about">location</a>
+       
+        
+      </div>
+    </div>
+
+    <h5><center>EVERYTHING YOU WANT TO KNOW ABOUT COFFEES</center></h5>
+
+    
+    
+    <div class="coffee-xx" >
+      <img src="kafe9.jpg" style="height: 500px;">
+      <p style="font-family: 'Courier New', Courier, monospace; " >  
+        Step into our cozy coffee corner, <br>
+         where you can learn to brew your favorite cup <br>
+        — from rich espressos to smooth lattes. <br>
+        <br>
+        Explore simple guides,<br> 
+        brewing tips, and gear picks to help you make <br>
+         barista-style coffee at our cafe.
+         <br>
+         <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    Click on the coffees to get details 
+
+    </p>
+
+    
+
+    <div class="coffee-menu">
+      <a href="cap.html"  target="_blank"  style="text-decoration: none;">
+      <div class="coffee-card">
+        <img src="kafe3.jpeg" alt="Cappuccino">
+        <div class="coffee-popup">CAPPUCCINO</div>
+      </a>  
+      </div>
+      
+      
+        <a href="la.html"  target="_blank"  style="text-decoration: none;">
+          <div class="coffee-card">
+          <img src="kafe4.jpeg" alt="Latte">
+        <div class="coffee-popup">LATTE</div>
+      </div>
+        </a>
+    
+      <a href="es.html"  target="_blank"  style="text-decoration: none;">
+      <div class="coffee-card">
+        <img src="kafe5.jpeg" alt="Espresso">
+        <div class="coffee-popup">ESPRESSO</div>
+      </div>
+      </a>
+    </div>
+
+  
+    <div class="coffee-menu">
+      <a href="ame.html"  target="_blank"  style="text-decoration: none;">
+      <div class="coffee-card">
+        <img src="kafe6.jpeg" alt="AMERICANO">
+        <div class="coffee-popup">AMERICANO</div>
+      </div>
+      </a>
+
+      <a href="mach.html"  target="_blank"  style="text-decoration: none;">
+      <div class="coffee-card">
+        <img src="kafe7.jpeg" alt="MACCHIATO">
+        <div class="coffee-popup">MACCHIATO</div>
+      </div>
+      </a>
+
+
+      <a href="moc.html"  target="_blank"  style="text-decoration: none;">
+      <div class="coffee-card">
+        <img src="kafe8.jpeg" alt="MOCHA">
+        <div class="coffee-popup">MOCHA</div>
+      </div>
+      </a>
+    </div>
+
+    </div>
+
+    <div id="about" style="background-color: transparent; padding-right: 400px; padding-bottom: 50px;">
+      <pre><h2>                       ☕ location</h2></pre> 
+      <p style="font-size: 18px; max-width: 600px; margin: auto;">
+        
+          Our shop is located in Wakad, <br>near Indira College...
+      </p>
+    </div>
+      
+    <hr>
+    <div id="about" style="background-color: transparent; padding-right: 400px; padding-bottom: 50px;">
+      <pre><h2>                       ☕ About Us</h2></pre>
+      <p style="font-size: 18px; max-width: 600px; margin: auto;">
+        
+          <br>
+          We are the students of BCA, <br>
+          passionate about web designing <br>
+          We have built this small project as an assignment..... 
+      </p>
+  </div>
+    <hr>
+  <div id="contact" style="background-color: transparent; padding-right: 400px; padding-bottom: 50px;">
+    <pre><h2>                        ☕ contact us</h2></pre>
+    <p style="font-size: 18px; max-width: 600px; margin: auto;">
+      
+        <br>
+        phone number: xxxxxxxxxx <br>
+        Email: xxxxxx22@gmail.com
+    </p>
+</div>
+<hr>
+
+  
+
+
+     
+</body>
+</HTML>
