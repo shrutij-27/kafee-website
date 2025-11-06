@@ -4,4 +4,4 @@ It is a website of a coffee shop that includes information about various types o
 
 It is the college project i completed with my friend.
 
-it was fun to create a website using html and had fun.
+It was fun to create a website using html.
